@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://kit.fontawesome.com/023f3f9e87.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALÉNDULA Estudio . Contacto</title><!--ver como poner un logo en la pestaña, ¿favicon?-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"><link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/023f3f9e87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+    <!--ver como quedan si se dejan fijos, el logo y menu en la parte superior de la página-->
+    <section><!--section1-->
+        <nav class=" navbar-light " style="background-color: #e9e8e8;">
+            <div class=" container-fluid navbar">
+            <a class="navbar-brand textNav" href="../index.html">caléndula estudio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active textMenu" aria-current="page" href="elEstudio.html">el estudio</a>
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link active textMenu" aria-current="page" href="servicios.html">servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active textMenu" aria-current="page" href="productos.html">productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active textMenu" aria-current="page" href="contacto.html">contacto</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+                </ul>
+                <!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+            </div>
+        </nav>
+        </section>
+    </header> 
+    <main>
+        <section><!--section2-->
+            <div>
+            <h1>Contacto</h1>
+            <div>
+                <ul>
+                <li>Nos encontramos en Nuñez, Buenos Aires, Argentina</li>
+                <li>e mail<a href="mailto:calendulaestudio@gmail.com"> caléndulaestudio@gmail.com </a></li>
+                <li>whatsapp<a class="botonwhatsapp" href="https://www.whatsapp.com">
+                    <i class="fab fa-whatsapp colorMedia"></i>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="imgElEstudio">
+            <img class="imgElEstudio" src="../images_videos/contactanosImagen.jpg"  alt="Diseño de espacios verdes">
+            </div>
+        </section>
+        <section><!--section3-->  
+            <h2>contactanos</h2>
+            
+
+                <form class="greenFrame" action="https://formspree.io/f/xayabpel"method="POST"></formaction>
+    
+                <label for="exampleDataList" class="form-label ">¿Cómo nos conociste?</label>
+                <input class="form-control" name="comonosconocio" list="datalistOptions" id="exampleDataList" placeholder="Clickeá para elegir...">
+                <datalist id="datalistOptions">
+                <option value="alguien te contó sobre nosotros">
+                <option value="nos encontraste en ig o fcb">
+                <option value="nos encontraste por google">
+                </datalist>
+                
+                <div class="row">
+                <div class="col">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" class="form-control" name="Nombre" placeholder="Nombre" aria-label="Nombre">
+                </div>
+                <div class="col">
+                    <label for="Celular">Celular</label>
+                    <input type="number" class="form-control" name="Celular" placeholder="Celular" aria-label="Celular">
+                </div>
+                </div>
+                
+                <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">¿Qué nos querés consultar?</label>
+                <textarea class="form-control" placeholder="Escribinos tu consulta" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                
+                <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="acepta" value="1"  id="flexCheckIndeterminate">
+                <label class="form-check-label" for="flexCheckIndeterminate">
+                    ¿Querés recibir nuestro newletter?
+                </label>
+                </div>
+                
+                <!-- <form class="row g-3"> -->
+                <div class="col-md-6 anchoCampo">
+                    <label for="inputEmail4" class="form-label ">Email</label>
+                    <input type="email" placeholder="Email" name="_replyto" class="form-control " id="inputEmail4" >
+                </div>
+                <div class="col-12">
+                    <button type="reset" class="btn btn-primary alinearBotones">Limpiar</button>
+                    <button type="submit" class="btn btn-primary alinearBotones">Enviar</button>
+                </form>
+                </div>
+                
+                <!--fin formulario bootstrap-->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="boxFooter"><!--section4--><!--COMIENZA EL FOOTER-->
+            <section>
+                <div class="ocultarDispositivosPequeños">
+                <ul>
+                    <li><a href="eEestudio.html"class="strongText">EL ESTUDIO </a></li>
+                    <li><a href="eEestudio.html">quienes somos </a></li>
+                    <li><a href="eEestudio.html">experiencia </a></li>
+                </ul>
+                </div>
+            </section> 
+            <section>
+                <div class="ocultarDispositivosPequeños">
+                    <ul>
+                        <li><a href="servicios.html"class="strongText">SERVICIOS</a></li>
+                        <li><a href="servicios.html">huertas</a></li>
+                        <li><a href="servicios.html">espacios verdes</a></li>
+                        <li><a href="servicios.html">jardines verticales</a></li>
+                        <li><a href="servicios.html">balcones y terrazas</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <div class="ocultarDispositivosPequeños">
+                    <ul>
+                        <li><a href="productos.html"class="strongText">PRODUCTOS</a></li>
+                        <li><a href="productos.html">mini huertas</a></li>
+                        <li><a href="productos.html">kit de siembra</a></li>
+                        <li><a href="productos.html">mini kit de siembra</a></li>
+                    </ul>
+                </div>
+            </section> 
+            <section>
+                <div class="ocultarDispositivosPequeños">
+                    <ul>
+                        <li><a href="contacto.html"class="strongText">CONTACTO</a></li>
+                        <li><a href="contacto.html">e mail</a></li>
+                        <li><a href="contacto.html">whatsapp</a></li>
+                    </ul>
+                </div>    
+            </section></section>
+            <section> 
+                <div class="enlaceInicio">
+                    <a href="../index.html">
+                    <i class="fas fa-home"></i></a>
+                </div>
+            </section>
+            <section>
+                <div >
+                    <a class="botonfacebook" href="https://www.facebook.com">
+                    <i class="fab fa-facebook colorMedia"></i>
+                    </a>
+                    <a class="botonig"href="https://www.instagram.com/calendulaestudio">
+                    <i class="fab fa-instagram  colorMedia"></i>
+                    </a>
+                    <a class="botonwhatsapp" href="https://www.whatsapp.com">
+                    <i class="fab fa-whatsapp colorMedia"></i>
+                    </a>
+                    <a class="botonmailto"href="#">
+                    <i class="far fa-envelope colorMedia"></i>
+                    </a>
+                </div>
+                <!--agregar las lineas verticales-->
+                <!--ver como se direccionan a las distintas páginas y agregar los logos--> 
+            </section>
+            <div>
+                <h6 class="textoPequeño">Creado por CALENDULA Estudio . 2021 . Todos los derechos registrados</h6>
+            </div>
+        
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>   
+    </body>
+    </html>
