@@ -1,0 +1,49 @@
+footer{
+    background-color:#5a7751;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+h6{
+color: blanchedalmond;
+margin-top: 20px;
+}
+.boxFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+
+}
+$colors: (
+ig: #ee55ae,
+facebook:  #3a5795,
+mailto: #f7f3f1,
+whatsapp: #499636,
+);
+@each $name-color, $color in $colors {
+    .boton#{$name-color} {
+        color: $color;
+        margin-right: 1rem;
+        font-size: 2rem;
+    }
+}
+.enlaceInicio{
+    text-align: right;
+    margin-right: 2rem;
+}
+
+
+@media all  and (max-width: 768px)
+{
+.ocultarDispositivosPequeños{
+    display: none;
+    
+}
+.achicarMedia{
+    color: blanchedalmond;
+    margin-top: 5px;
+    }
+}

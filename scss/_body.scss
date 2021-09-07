@@ -1,0 +1,204 @@
+body{
+    font-family: 'Quicksand', sans-serif;;
+}
+@mixin pruebaTexto ($tamaño, $color,){
+    color:$color;
+    text-align: center;
+    padding: 10px;
+    font-size: $tamaño;
+}
+.carouselTexto{
+    @include pruebaTexto (20px,rgb(255, 253, 253));
+    text-shadow: black 0.1em 0.1em 0.2em; 
+}
+.carouselTitulo{
+    @include pruebaTexto (80px, rgb(245, 245, 245));
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+h1 {
+    @include pruebaTexto (60px,rgb(114, 129, 87));
+    padding: 2rem;
+    margin-top: 2rem;
+    font-weight: 800
+}
+h2 { 
+    @include pruebaTexto (50px, #603813);
+    }
+h3{
+    @include pruebaTexto (40px, #603813);
+}
+h4{
+    @include pruebaTexto (20px, #603813);
+}
+h5{
+    @include pruebaTexto (80px, #603813);
+    }
+p{
+    @include pruebaTexto (20px,#603813);
+}
+span{
+    @include pruebaTexto (20px,#603813);
+    font-weight: 600
+}
+.textNav{
+    @include pruebaTexto (30px, rgb(255, 253, 253) !important);
+    }
+.textMenu{
+    @include pruebaTexto(20px, rgb(255, 253, 253)!important);
+    text-align: left;
+}
+
+.navbar{
+    font-weight: 800;
+    background-color:#5a7751;
+    }
+
+nav ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 5px 5px;
+}
+
+/*grid texto*/
+.textImagen
+{   display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    background: #603813;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #b29f94, #603813);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #b29f94, #603813); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 250px;
+}
+/*grid imagen */
+.gridImagenTexto{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+/*cuadros titulos*/
+
+
+.imgGrid{ 
+    margin-bottom: 3rem;
+    overflow: hidden;  
+    width: 80%;
+    transition: all 1s;
+}
+
+.imgGrid:hover{
+    transform: scale(1.1);
+}
+
+/*fomNewsletter*/
+.greenFrame
+{ 
+    padding: 5vh;
+    text-align: left;
+}
+button { 
+    background-color:#5a7751;
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    color: rgb(251, 252, 250);
+    border-color: rgb(251, 252, 250);
+    
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+.navbar-light .navbar-toggler {
+    color: white;
+    border-color: white;
+}
+.anchoCampo{
+    width:100%;
+    box-sizing: border-box;
+}
+    /* carousel*/ 
+.carouselMedidas{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+    margin:auto;
+}
+.imgElEstudio{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.formNewsletter{
+text-align: center;
+padding: 2rem;
+}
+form{
+    color: #f5f3f1;
+    width: 75%;
+    background-color: #5a7751;
+    margin: auto;
+    border-radius: 2rem;
+    padding: auto;
+    margin-bottom: 3rem;
+}
+form > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    
+}
+.alinearBotones{
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#5d7956;
+    border-color: #dadfd9;
+    margin: auto;
+}
+.imageProduct{
+    height: 250px;
+    justify-items: center;
+}
+.textoPequeño {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(61, 73, 30);
+    width: 100%;
+    font-size-adjust: 1vw;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+}
+@media all and (max-width: 768px)
+{
+h1{ color: #a39884;
+    text-align: center;
+    padding: 10px;
+    font-size: 60px;
+    padding: 2rem;
+    margin-top: 2rem;
+    font-weight: 800;}
+
+    .gridImagenTexto{
+        font-size: 2rem;
+    } 
+    .gridImagenTexto{
+        display: grid;
+        grid-template-columns: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+    .carouselMedidas{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 75%;
+        margin:auto;
+    } }
+
