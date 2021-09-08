@@ -32,10 +32,11 @@ h1 {
   color: #728157;
   text-align: center;
   padding: 10px;
-  font-size: 60px;
+  font-size: 80px;
+  font-family: 'Amatic SC', cursive;
   padding: 2rem;
   margin-top: 2rem;
-  font-weight: 800; }
+  font-weight: 1200; }
 
 h2 {
   color: #603813;
@@ -60,6 +61,12 @@ h5 {
   text-align: center;
   padding: 10px;
   font-size: 80px; }
+
+h6 {
+  color: white !important;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.75rem; }
 
 p {
   color: #603813;
@@ -141,7 +148,18 @@ button {
   font-family: 'Quicksand', sans-serif;
   font-size: large;
   color: #fbfcfa;
-  border-color: #fbfcfa; }
+  border-color: #fbfcfa;
+  border-radius: 0.25rem;
+  margin-left: 1.5rem; }
+
+button:hover {
+  background-color: red; }
+
+.buttonHover {
+  background-color: #5a7751; }
+
+.buttonHover:hover {
+  background-color: red; }
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
@@ -175,14 +193,14 @@ form {
   width: 75%;
   background-color: #5a7751;
   margin: auto;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   padding: auto;
   margin-bottom: 3rem; }
 
 form > div {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 5px;
   justify-content: flex-start;
   margin-bottom: 10px; }
 
@@ -194,7 +212,8 @@ form > div {
   justify-content: center;
   background-color: #5d7956;
   border-color: #dadfd9;
-  margin: auto; }
+  margin: auto;
+  margin-top: 1rem; }
 
 .imageProduct {
   height: 250px;
@@ -208,6 +227,18 @@ form > div {
   padding: 20px 0px 20px 0px;
   text-align: center; }
 
+a {
+  color: white;
+  text-decoration: none; }
+
+a:hover {
+  color: red;
+  text-decoration: none; }
+
+.centrarParrafo {
+  margin-left: 10%;
+  margin-right: 10%; }
+
 @media all and (max-width: 768px) {
   h1 {
     color: #a39884;
@@ -217,6 +248,11 @@ form > div {
     padding: 2rem;
     margin-top: 2rem;
     font-weight: 800; }
+  h6 {
+    color: white !important;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem; }
   .gridImagenTexto {
     font-size: 2rem; }
   .gridImagenTexto {
@@ -228,7 +264,24 @@ form > div {
     padding-top: 50px;
     padding-bottom: 50px;
     width: 75%;
-    margin: auto; } }
+    margin: auto; }
+  button {
+    margin-top: 1.5rem;
+    margin-left: 0; } }
+
+@media all and (max-width: 1024px) {
+  .carouselTexto {
+    color: #fffdfd;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    text-shadow: black 0.1em 0.1em 0.2em; }
+  .carouselTitulo {
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    text-shadow: black 0.1em 0.1em 0.2em; } }
 
 footer {
   background-color: #5a7751;
@@ -278,3 +331,23 @@ h6 {
   .achicarMedia {
     color: blanchedalmond;
     margin-top: 5px; } }
+
+.botonig {
+  color: white;
+  margin-right: 1rem;
+  font-size: 1.5rem; }
+
+.botonfacebook {
+  color: white;
+  margin-right: 1rem;
+  font-size: 1.5rem; }
+
+.botonmailto {
+  color: white;
+  margin-right: 1rem;
+  font-size: 1.5rem; }
+
+.botonwhatsapp {
+  color: white;
+  margin-right: 1rem;
+  font-size: 1.5rem; }

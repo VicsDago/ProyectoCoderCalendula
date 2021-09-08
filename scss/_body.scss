@@ -15,11 +15,14 @@ body{
     @include pruebaTexto (80px, rgb(245, 245, 245));
     text-shadow: black 0.1em 0.1em 0.2em;
 }
+
+
 h1 {
-    @include pruebaTexto (60px,rgb(114, 129, 87));
+    @include pruebaTexto (80px,rgb(114, 129, 87));
+    font-family: 'Amatic SC', cursive;
     padding: 2rem;
     margin-top: 2rem;
-    font-weight: 800
+    font-weight: 1200;
 }
 h2 { 
     @include pruebaTexto (50px, #603813);
@@ -33,6 +36,9 @@ h4{
 h5{
     @include pruebaTexto (80px, #603813);
     }
+h6{
+    @include pruebaTexto (0.75rem, white !important);
+}   
 p{
     @include pruebaTexto (20px,#603813);
 }
@@ -108,8 +114,23 @@ button {
     font-size: large;
     color: rgb(251, 252, 250);
     border-color: rgb(251, 252, 250);
-    
+    border-radius: 0.25rem;
+    margin-left: 1.5rem;
 }
+
+    button:hover {
+    background-color: red;
+} 
+
+.buttonHover{
+    background-color:#5a7751;
+}
+.buttonHover:hover {
+    background-color: red;
+}
+
+
+
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
@@ -142,14 +163,14 @@ form{
     width: 75%;
     background-color: #5a7751;
     margin: auto;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     padding: auto;
     margin-bottom: 3rem;
 }
 form > div {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 5px;
     justify-content: flex-start;
     margin-bottom: 10px;
     
@@ -163,6 +184,7 @@ form > div {
     background-color:#5d7956;
     border-color: #dadfd9;
     margin: auto;
+    margin-top: 1rem;
 }
 .imageProduct{
     height: 250px;
@@ -176,6 +198,19 @@ form > div {
     padding: 20px 0px 20px 0px;
     text-align: center;
 }
+a {
+    color: white;
+    text-decoration: none;
+}
+    a:hover {
+    color: red;
+    text-decoration: none;
+} 
+.centrarParrafo{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 @media all and (max-width: 768px)
 {
 h1{ color: #a39884;
@@ -185,7 +220,9 @@ h1{ color: #a39884;
     padding: 2rem;
     margin-top: 2rem;
     font-weight: 800;}
-
+h6{
+    @include pruebaTexto (0.5rem, white !important);
+    }
     .gridImagenTexto{
         font-size: 2rem;
     } 
@@ -200,5 +237,19 @@ h1{ color: #a39884;
         padding-bottom: 50px;
         width: 75%;
         margin:auto;
+    }
+    button { 
+        margin-top: 1.5rem;
+        margin-left: 0;
     } }
 
+    @media all and (max-width:1024px)
+    {  
+    .carouselTexto{
+        @include pruebaTexto (15px,rgb(255, 253, 253));
+        text-shadow: black 0.1em 0.1em 0.2em; 
+    }
+    .carouselTitulo{
+        @include pruebaTexto (50px, rgb(245, 245, 245));
+        text-shadow: black 0.1em 0.1em 0.2em;
+    } }
