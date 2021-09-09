@@ -26,9 +26,11 @@ h1 {
 }
 h2 { 
     @include pruebaTexto (50px, #603813);
+    margin-top: 3rem;
     }
 h3{
     @include pruebaTexto (40px, #603813);
+    margin-bottom: 1.5rem;
 }
 h4{
     @include pruebaTexto (20px, #603813);
@@ -118,18 +120,12 @@ button {
     margin-left: 1.5rem;
 }
 
-    button:hover {
-    background-color: red;
-} 
-
 .buttonHover{
     background-color:#5a7751;
 }
 .buttonHover:hover {
     background-color: red;
 }
-
-
 
 .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
@@ -220,6 +216,15 @@ h1{ color: #a39884;
     padding: 2rem;
     margin-top: 2rem;
     font-weight: 800;}
+h2 { 
+    @include pruebaTexto (40px, #603813);
+}
+h3{
+    @include pruebaTexto (30px, #603813);
+}
+h4{
+    @include pruebaTexto (15px, #603813);
+}
 h6{
     @include pruebaTexto (0.5rem, white !important);
     }
@@ -241,6 +246,11 @@ h6{
     button { 
         margin-top: 1.5rem;
         margin-left: 0;
+    }
+    .imgGrid{ 
+        margin-bottom: 3rem;
+        overflow: hidden;  
+        width: 100%;
     } }
 
     @media all and (max-width:1024px)
