@@ -85,7 +85,8 @@ span {
   text-align: center;
   padding: 10px;
   font-size: 20px;
-  font-weight: 600; }
+  font-weight: 600;
+  margin: 0; }
 
 .textNav {
   color: #fffdfd !important;
@@ -227,7 +228,8 @@ form > div {
 
 .imageProduct {
   height: 250px;
-  justify-items: center; }
+  justify-items: center;
+  margin-bottom: 1.5rem; }
 
 .textoPequeño {
   font-family: 'Quicksand', sans-serif;
@@ -242,6 +244,9 @@ form > div {
   margin-right: 10%; }
 
 @media all and (max-width: 768px) {
+  td {
+    display: block;
+    margin-bottom: 2rem; }
   h1 {
     color: #a39884;
     text-align: center;
@@ -264,7 +269,10 @@ form > div {
     color: #603813;
     text-align: center;
     padding: 10px;
-    font-size: 15px; }
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0; }
   h6 {
     color: white !important;
     text-align: center;
@@ -291,7 +299,18 @@ form > div {
     width: 100%;
     transition: all 1s; }
   .imgGrid:hover {
-    transform: none; } }
+    transform: none; }
+  span {
+    color: #603813;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0; }
+  .imageProduct {
+    height: 250px;
+    justify-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem; } }
 
 @media all and (max-width: 1024px) {
   .carouselTexto {

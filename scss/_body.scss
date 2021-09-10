@@ -44,7 +44,8 @@ p{
 }
 span{
     @include pruebaTexto (20px,#603813);
-    font-weight: 600
+    font-weight: 600;
+    margin: 0;
 }
 .textNav{
     @include pruebaTexto (30px, rgb(255, 253, 253) !important);
@@ -193,6 +194,7 @@ form > div {
 .imageProduct{
     height: 250px;
     justify-items: center;
+    margin-bottom: 1.5rem;
 }
 .textoPequeño {
     font-family: 'Quicksand', sans-serif;
@@ -209,6 +211,11 @@ form > div {
 
 @media all and (max-width: 768px)
 {
+td {
+    display: block;
+    margin-bottom: 2rem;
+    
+}
 h1{ color: #a39884;
     text-align: center;
     padding: 10px;
@@ -224,6 +231,9 @@ h3{
 }
 h4{
     @include pruebaTexto (15px, #603813);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 h6{
     @include pruebaTexto (0.5rem, white !important);
@@ -255,7 +265,19 @@ h6{
     }
     .imgGrid:hover{
     transform:none;
-    } }
+    } 
+    span{
+        @include pruebaTexto (20px,#603813);
+        margin: 0;
+    }
+    .imageProduct{
+        height: 250px;
+        justify-items: center;
+        margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    }
+
     @media all and (max-width:1024px)
     {  
     .carouselTexto{
