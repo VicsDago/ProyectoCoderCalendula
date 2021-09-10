@@ -7,6 +7,10 @@ ul li {
     list-style: none;
     }
 a {
+    color: white;
     text-decoration: none;
-    color: rgb(253, 253, 253);
 }
+    a:hover {
+    color: #a0b69a;
+    text-decoration: none;
+} 

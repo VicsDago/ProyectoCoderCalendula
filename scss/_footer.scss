@@ -17,19 +17,21 @@ margin-top: 20px;
     height: auto;
 
 }
-$colors: (
-ig: #ee55ae,
-facebook:  #3a5795,
-mailto: #f7f3f1,
-whatsapp: #499636,
-);
-@each $name-color, $color in $colors {
-    .boton#{$name-color} {
-        color: $color;
-        margin-right: 1rem;
-        font-size: 2rem;
-    }
-}
+// prueba para desafío
+
+// $colors: (
+// ig: #ee55ae,
+// facebook:  #3a5795,
+// mailto: #f7f3f1,
+// whatsapp: #499636,
+// );
+// @each $name-color, $color in $colors {
+//     .boton#{$name-color} {
+//         color: $color;
+//         margin-right: 1rem;
+//         font-size: 2rem;
+//     }
+// }
 .enlaceInicio{
     text-align: right;
     margin-right: 2rem;
@@ -42,10 +44,10 @@ whatsapp: #499636,
     display: none;
     
 }
-.achicarMedia{
-    color: blanchedalmond;
-    margin-top: 5px;
-    }
+// .achicarMedia{
+//     color: blanchedalmond;
+//     margin-top: 5px;
+//     }
 }
 .botonig {
     color: white;
